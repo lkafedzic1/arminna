@@ -1,6 +1,18 @@
 {
   "private": true,
+  "name": "systemic-constellations",
+  "version": "1.0.0",
+  "description": "Professional landing page for Systemic Constellation consulting services",
+  "author": "Your Name",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "build": "echo 'Static site - no build step required'"
+  },
   "dependencies": {
     "@vercel/edge": "^0.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lkafedzic1/arminna.git"
   }
 }

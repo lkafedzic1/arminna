@@ -3,94 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
     <meta
       name="description"
-      content="High-performance HTML based website template."
+      content="Transform your life through systemic constellation work. Discover clarity, healing, and meaningful change."
     />
+    <meta name="author" content="Systemic Constellations" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-weight='bold' fill='%23C9A0A0'>S</text></svg>"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <!-- Analytics (Vercel) -->
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <title>Systemic Constellations | Transform Your Life</title>
   </head>
+
   <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
+    <!-- ===== HEADER ===== -->
+    <div id="header-container"></div>
+    <script>
+      fetch("./components/header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header-container").innerHTML = data;
+        });
+    </script>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+      <!-- Hero Section -->
+      <div id="hero-container"></div>
+      <script>
+        fetch("./components/hero.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("hero-container").innerHTML = data;
+          });
+      </script>
+
+      <!-- About Section -->
+      <div id="about-container"></div>
+      <script>
+        fetch("./components/about.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("about-container").innerHTML = data;
+          });
+      </script>
+
+      <!-- Services Section -->
+      <div id="services-container"></div>
+      <script>
+        fetch("./components/services.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("services-container").innerHTML = data;
+          });
+      </script>
+
+      <!-- Process Section -->
+      <div id="process-container"></div>
+      <script>
+        fetch("./components/process.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("process-container").innerHTML = data;
+          });
+      </script>
+
+      <!-- Testimonials Section -->
+      <div id="testimonials-container"></div>
+      <script>
+        fetch("./components/testimonials.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("testimonials-container").innerHTML = data;
+          });
+      </script>
+
+      <!-- CTA Section -->
+      <div id="cta-container"></div>
+      <script>
+        fetch("./components/cta.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("cta-container").innerHTML = data;
+          });
+      </script>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <div id="footer-container"></div>
+    <script>
+      fetch("./components/footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer-container").innerHTML = data;
+        });
+    </script>
   </body>
 </html>
