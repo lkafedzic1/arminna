@@ -3,110 +3,380 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arminna</title>
     <meta
       name="description"
       content="Transform your life through systemic constellation work. Discover clarity, healing, and meaningful change."
     />
-    <meta name="author" content="Systemic Constellations" />
-
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-weight='bold' fill='%23C9A0A0'>S</text></svg>"
-    />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="./styles/main.css" />
-
-    <!-- Analytics (Vercel) -->
-    <script defer src="/_vercel/insights/script.js"></script>
-
-    <title>Systemic Constellations | Transform Your Life</title>
+    <meta name="author" content="Armina Kafedzic-Briga" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="apple-touch-icon" href="images/favicon.svg" />
   </head>
-
   <body>
-    <!-- ===== HEADER ===== -->
-    <div id="header-container"></div>
-    <script>
-      fetch("./components/header.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("header-container").innerHTML = data;
-        });
-    </script>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <a href="#home" class="logo-link">
+            <img
+              src="images/logo.svg"
+              alt="Armina - Systemic Constellation Master"
+              class="logo-image"
+            />
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="nav-list">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#process" class="nav-link">How It Works</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            <li>
+              <a href="#contact" class="nav-link nav-link--cta"
+                >Book a Session</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <!-- ===== MAIN CONTENT ===== -->
     <main>
       <!-- Hero Section -->
-      <div id="hero-container"></div>
-      <script>
-        fetch("./components/hero.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("hero-container").innerHTML = data;
-          });
-      </script>
+      <section id="home" class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Transform Your Life Through Systemic Constellation Work
+          </h1>
+          <div class="hero__consultant">
+            <h3 class="consultant__name">Armina Kafedzic-Briga</h3>
+            <p class="consultant__credentials">
+              <strong>Systemic Constellation Master, WSCO</strong><br />
+              NLP-Practitioner with high ethics and quality standards of the
+              World Systematic Constellation Organisation (WSCO)
+            </p>
+            <p class="consultant__description">
+              An <em>experienced</em>, <em>compassionate</em>, and
+              <em>intuitive</em> business consultant who brings <em>wisdom</em>,
+              <em>clarity</em>, and <em>transformative insight</em> to every
+              session. Known for her <em>professional excellence</em>,
+              <em>empathetic approach</em>, and
+              <em>results-driven methodology</em>.
+            </p>
+            <div class="consultant__languages">
+              <p><strong>Languages:</strong> Bosnian • English • German</p>
+            </div>
+          </div>
+          <a href="#contact" class="button button--primary"
+            >Start Your Journey</a
+          >
+        </div>
+        <div class="hero__image">
+          <img
+            src="images/Armina_portrait.jpg"
+            alt="Armina Kafedzic-Briga - Systemic Constellation Master"
+            class="hero__img"
+          />
+        </div>
+      </section>
 
       <!-- About Section -->
-      <div id="about-container"></div>
-      <script>
-        fetch("./components/about.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("about-container").innerHTML = data;
-          });
-      </script>
+      <section id="about" class="about">
+        <div class="about__container">
+          <div class="about__content">
+            <h2 class="section-title">What is Systemic Constellation Work?</h2>
+            <p class="about__text">
+              Systemic Constellations is a powerful, evidence-based therapeutic
+              approach that reveals and resolves hidden patterns within
+              families, organizations, and relationships. By creating a visual
+              representation of your system, we uncover limiting beliefs and
+              unconscious dynamics that may be holding you back.
+            </p>
+            <p class="about__text">
+              Through this work, clients gain awareness, heal old patterns, and
+              experience deep shifts in perspective and direction.
+            </p>
+            <h3 class="about__subheading">
+              Why Choose Systemic Constellations?
+            </h3>
+            <ul class="about__benefits">
+              <li class="benefit-item">
+                Rapid insight into root causes of recurring challenges
+              </li>
+              <li class="benefit-item">Heal family and relational patterns</li>
+              <li class="benefit-item">
+                Gain clarity on career and life direction
+              </li>
+              <li class="benefit-item">Experience lasting transformation</li>
+            </ul>
+          </div>
+          <div class="about__credentials">
+            <h3 class="about__subheading">About Your Guide</h3>
+            <p class="about__credential-text">
+              Certified Systemic Constellation Master with
+              <strong>many years of experience</strong> working with individuals
+              and organizations across diverse backgrounds.
+            </p>
+            <p class="about__credential-text">
+              Dedicated to creating a safe, compassionate space where deep
+              healing and transformation can occur.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <!-- Services Section -->
-      <div id="services-container"></div>
-      <script>
-        fetch("./components/services.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("services-container").innerHTML = data;
-          });
-      </script>
+      <section id="services" class="services">
+        <div class="services__container">
+          <h2 class="section-title">Services</h2>
+          <p class="services__intro">
+            Tailored constellation work designed to meet your unique needs and
+            goals.
+          </p>
+          <div class="services__grid">
+            <article class="service-card">
+              <h3 class="service-card__title">Individual Sessions</h3>
+              <p class="service-card__description">
+                One-on-one constellation work focused on your personal
+                challenges, relationships, and life direction. Perfect for those
+                seeking deep, personalized guidance.
+              </p>
+              <a href="#contact" class="service-card__link">Learn More →</a>
+            </article>
+            <article class="service-card">
+              <h3 class="service-card__title">Group Constellations</h3>
+              <p class="service-card__description">
+                Experience the power of witnessing others' work while gaining
+                insights for your own journey. A supportive community setting
+                for exploration and healing.
+              </p>
+              <a href="#contact" class="service-card__link">Learn More →</a>
+            </article>
+            <article class="service-card">
+              <h3 class="service-card__title">Workshops & Training</h3>
+              <p class="service-card__description">
+                Immersive experiences to deepen your understanding of systemic
+                work. Ideal for personal development and professional
+                practitioners.
+              </p>
+              <a href="#contact" class="service-card__link">Learn More →</a>
+            </article>
+            <article class="service-card">
+              <h3 class="service-card__title">
+                Corporate & Team Constellations
+              </h3>
+              <p class="service-card__description">
+                Resolve team dynamics, improve communication, and align
+                organizational systems for greater effectiveness and harmony.
+              </p>
+              <a href="#contact" class="service-card__link">Learn More →</a>
+            </article>
+          </div>
+        </div>
+      </section>
 
       <!-- Process Section -->
-      <div id="process-container"></div>
-      <script>
-        fetch("./components/process.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("process-container").innerHTML = data;
-          });
-      </script>
+      <section id="process" class="process">
+        <div class="process__container">
+          <h2 class="section-title">How It Works</h2>
+          <p class="process__intro">
+            A clear, supportive journey from your first inquiry to lasting
+            transformation.
+          </p>
+          <div class="process__steps">
+            <div class="process-step">
+              <div class="process-step__number">01</div>
+              <h3 class="process-step__title">Initial Consultation</h3>
+              <p class="process-step__description">
+                We discuss your situation, challenges, and goals. This
+                confidential conversation helps us understand what you're
+                seeking and determine the best approach.
+              </p>
+            </div>
+            <div class="process-step">
+              <div class="process-step__number">02</div>
+              <h3 class="process-step__title">Set Your Intention</h3>
+              <p class="process-step__description">
+                Together, we clarify the specific issue or pattern you want to
+                explore. A clear intention opens the door to powerful insights.
+              </p>
+            </div>
+            <div class="process-step">
+              <div class="process-step__number">03</div>
+              <h3 class="process-step__title">The Constellation</h3>
+              <p class="process-step__description">
+                Using representatives or imagery, we map your system and explore
+                the hidden dynamics. The experience often brings immediate
+                clarity and perspective shifts.
+              </p>
+            </div>
+            <div class="process-step">
+              <div class="process-step__number">04</div>
+              <h3 class="process-step__title">Integration & Reflection</h3>
+              <p class="process-step__description">
+                You integrate the insights and shifts into your daily life. We
+                discuss practical steps and next actions to support your
+                transformation.
+              </p>
+            </div>
+            <div class="process-step">
+              <div class="process-step__number">05</div>
+              <h3 class="process-step__title">Follow-Up & Support</h3>
+              <p class="process-step__description">
+                Ongoing support ensures sustainable change. Many clients
+                schedule follow-up sessions to deepen their work or explore new
+                challenges.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Testimonials Section -->
-      <div id="testimonials-container"></div>
-      <script>
-        fetch("./components/testimonials.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("testimonials-container").innerHTML = data;
-          });
-      </script>
+      <section id="testimonials" class="testimonials">
+        <div class="testimonials__container">
+          <h2 class="section-title">Transformations That Matter</h2>
+          <p class="testimonials__intro">
+            Hear from clients who've experienced profound shifts through
+            systemic constellation work.
+          </p>
+          <div class="testimonials__grid">
+            <blockquote class="testimonial">
+              <p class="testimonial__quote">
+                After years of therapy, the constellation work gave me in one
+                session what I couldn't access before. I finally understand my
+                relationship patterns and feel equipped to move forward.
+              </p>
+              <footer class="testimonial__footer">
+                <strong class="testimonial__name">Sarah M.</strong>
+                <span class="testimonial__context"
+                  >Relationship & Personal Growth</span
+                >
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial">
+              <p class="testimonial__quote">
+                Our team brought our organizational challenges to constellation
+                work. The shift in communication and collaboration has been
+                remarkable. I'd recommend this for any leadership team.
+              </p>
+              <footer class="testimonial__footer">
+                <strong class="testimonial__name">James K.</strong>
+                <span class="testimonial__context">Corporate Team Lead</span>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial">
+              <p class="testimonial__quote">
+                I came uncertain and skeptical. What I experienced was
+                undeniable. My perspective on my family situation completely
+                shifted, and I left with clarity and peace.
+              </p>
+              <footer class="testimonial__footer">
+                <strong class="testimonial__name">Marie L.</strong>
+                <span class="testimonial__context">Family Systems Work</span>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
 
       <!-- CTA Section -->
-      <div id="cta-container"></div>
-      <script>
-        fetch("./components/cta.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("cta-container").innerHTML = data;
-          });
-      </script>
+      <section id="contact" class="cta">
+        <div class="cta__container">
+          <div class="cta__content">
+            <h2 class="cta__title">Ready to Transform Your Life?</h2>
+            <p class="cta__text">
+              Take the first step toward clarity, healing, and meaningful
+              change. Book your initial consultation today.
+            </p>
+            <div class="cta__buttons">
+              <a href="mailto:contact@arminna.de" class="button button--primary"
+                >Schedule Your Session</a
+              >
+              <a href="tel:+4915226788789" class="button button--secondary"
+                >Call Us</a
+              >
+            </div>
+            <p class="cta__note">
+              First consultation: <strong>30 minutes, complimentary</strong> to
+              discuss your goals and how we can help.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- ===== FOOTER ===== -->
-    <div id="footer-container"></div>
-    <script>
-      fetch("./components/footer.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("footer-container").innerHTML = data;
-        });
-    </script>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <h4 class="footer__heading">Armina Kafedzic-Briga</h4>
+            <p class="footer__text">
+              Transforming lives through compassionate, evidence-based systemic
+              work.
+            </p>
+          </div>
+          <div class="footer__section">
+            <h4 class="footer__heading">Quick Links</h4>
+            <ul class="footer__links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__section">
+            <h4 class="footer__heading">Contact</h4>
+            <p class="footer__text">
+              <a href="mailto:contact@arminna.de">contact@arminna.de</a><br />
+              <a href="tel:+4915226788789">+49 1522 6788789</a>
+            </p>
+          </div>
+          <div class="footer__section">
+            <h4 class="footer__heading">Follow</h4>
+            <ul class="footer__social">
+              <li>
+                <a
+                  href="https://linkedin.com/in/armina-kafedzic-579a97b9"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://instagram.com/armina.arminna"
+                  aria-label="Instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://facebook.com/arminaa.arminaa"
+                  aria-label="Facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__thank-you">
+            Thank you for visiting. I look forward to supporting you on your
+            journey of transformation and growth.
+          </p>
+          <p class="footer__copyright">
+            &copy; 2025 Armina Kafedzic-Briga. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

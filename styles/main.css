@@ -858,6 +858,10 @@ strong {
     padding: var(--spacing-md);
   }
 
+  .hero__content .button--primary {
+    margin-top: var(--spacing-lg);
+  }
+
   .consultant__name {
     font-size: var(--font-size-lg);
   }
