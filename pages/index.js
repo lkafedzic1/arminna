@@ -12,11 +12,8 @@ export default function Home() {
         <meta name="author" content="Systemic Constellations" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/styles/main.css" />
-        <link
-          rel="icon"
-          type="image/svg+xml"
-          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-weight='bold' fill='%23C9A0A0'>S</text></svg>"
-        />
+        <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+        <link rel="apple-touch-icon" href="/images/favicon.svg" />
         <script defer src="/_vercel/insights/script.js"></script>
       </Head>
 
@@ -25,8 +22,8 @@ export default function Home() {
         <div className="header__container">
           <div className="header__logo">
             <a href="#home" className="logo-link">
-              <img 
-                src="/images/logo.svg" 
+              <img
+                src="/images/logo.svg"
                 alt="Armina - Systemic Constellation Master"
                 className="logo-image"
               />
