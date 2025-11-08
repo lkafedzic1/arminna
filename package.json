@@ -5,11 +5,16 @@
   "description": "Professional landing page for Systemic Constellation consulting services",
   "author": "Your Name",
   "scripts": {
-    "dev": "python3 -m http.server 3000",
-    "build": "echo 'Static site - no build step required'"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
   },
   "dependencies": {
-    "@vercel/edge": "^0.1.2"
+    "@vercel/edge": "^0.1.2",
+    "next": "^16.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "repository": {
     "type": "git",
