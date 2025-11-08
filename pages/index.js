@@ -71,14 +71,36 @@ export default function Home() {
               Unlock hidden patterns, heal relationships, and discover your path
               forward with compassionate, evidence-based guidance.
             </p>
+            <div className="hero__consultant">
+              <h3 className="consultant__name">Armina Kafedzic-Briga</h3>
+              <p className="consultant__credentials">
+                <strong>Systemic Constellation Master, WSCO</strong>
+                <br />
+                NLP-Practitioner with high ethics and quality standards of the
+                World Systematic Constellation Organisation (WSCO)
+              </p>
+              <p className="consultant__description">
+                An <em>experienced</em>, <em>compassionate</em>, and{" "}
+                <em>intuitive</em> business consultant who brings{" "}
+                <em>wisdom</em>, <em>clarity</em>, and{" "}
+                <em>transformative insight</em> to every session. Known for her{" "}
+                <em>professional excellence</em>, <em>empathetic approach</em>,
+                and <em>results-driven methodology</em>.
+              </p>
+              <div className="consultant__languages">
+                <p>
+                  <strong>Languages:</strong> Bosnian • English • German
+                </p>
+              </div>
+            </div>
             <a href="#contact" className="button button--primary">
               Start Your Journey
             </a>
           </div>
           <div className="hero__image">
             <img
-              src="https://via.placeholder.com/600x400?text=Systemic+Constellations"
-              alt="Systemic Constellation Session"
+              src="/images/Armina_portrait.jpg"
+              alt="Armina Kafedzic-Briga - Systemic Constellation Master"
               className="hero__img"
             />
           </div>
