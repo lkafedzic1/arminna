@@ -140,7 +140,7 @@ Edit `components/testimonials.html`:
 
 Edit `components/cta.html`:
 
-- Update email address (`mailto:hello@example.com`)
+- Update email address (`mailto:contact@arminna.de`)
 - Update phone number (`tel:+1234567890`)
 - Change button text
 
@@ -160,6 +160,8 @@ Each component uses BEM (Block Element Modifier) naming:
 
 ```css
 .hero              /* Block */
+/* Block */
+/* Block */
 /* Block */
 .hero__title       /* Element */
 .hero__content     /* Element */

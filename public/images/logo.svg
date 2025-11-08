@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="45" viewBox="0 0 624 110" role="img" aria-label="arminna logo">
+  <title>arminna logo</title>
+  <desc>Horizontal logo with circular emblem and wordmark, colored #B08080. Emblem elements precisely centered and aligned.</desc>
+  <style>
+    .brand { fill: #B08080; stroke: #B08080; }
+    .text  { fill: #B08080; font-family: 'Poppins','Inter','Segoe UI',system-ui,-apple-system,sans-serif; font-weight: 600; }
+  </style>
+
+  <!-- Emblem (circle with 'a' and bars), tightly centered -->
+  <g transform="translate(10,5)">
+    <!-- outer circle -->
+    <circle cx="50" cy="50" r="45" fill="none" stroke="#B08080" stroke-width="8"/>
+    <!-- letter 'a' centered vertically -->
+    <text x="33" y="50" text-anchor="middle" dominant-baseline="central" class="text" font-size="58">a</text>
+    <!-- ascending bars aligned to a common baseline inside the circle -->
+    <!-- baseline at y=70 -->
+    <rect x="50" y="52" width="7" height="20" rx="2" class="brand"/>
+    <rect x="60" y="42" width="7" height="30" rx="2" class="brand"/>
+    <rect x="70" y="30" width="7" height="42" rx="2" class="brand"/>
+  </g>
+
+  <!-- Wordmark (tight vertical fit, minimal margins) -->
+  <text x="134" y="83" class="text" font-size="90">arminna</text>
+</svg>

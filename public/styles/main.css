@@ -247,6 +247,18 @@ strong {
   color: var(--color-primary);
 }
 
+.logo-image {
+  display: block;
+  height: 50px;
+  width: auto;
+  max-width: 220px;
+  transition: opacity 0.3s ease;
+}
+
+.logo-link:hover .logo-image {
+  opacity: 0.85;
+}
+
 .nav-list {
   display: flex;
   list-style: none;
@@ -329,7 +341,6 @@ strong {
 }
 
 .hero__consultant {
-  margin: var(--spacing-lg) 0;
   padding: var(--spacing-lg);
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: var(--border-radius-md);
@@ -832,6 +843,11 @@ strong {
     gap: var(--spacing-md);
   }
 
+  .logo-image {
+    height: 40px;
+    max-width: 180px;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     gap: var(--spacing-2xl);
@@ -839,7 +855,6 @@ strong {
   }
 
   .hero__consultant {
-    margin: var(--spacing-md) 0;
     padding: var(--spacing-md);
   }
 

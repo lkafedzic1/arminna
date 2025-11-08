@@ -25,7 +25,11 @@ export default function Home() {
         <div className="header__container">
           <div className="header__logo">
             <a href="#home" className="logo-link">
-              <span className="logo-text">Systemic Constellations</span>
+              <img 
+                src="/images/logo.svg" 
+                alt="Armina - Systemic Constellation Master"
+                className="logo-image"
+              />
             </a>
           </div>
           <nav className="header__nav">
@@ -67,10 +71,6 @@ export default function Home() {
             <h1 className="hero__title">
               Transform Your Life Through Systemic Constellation Work
             </h1>
-            <p className="hero__subtitle">
-              Unlock hidden patterns, heal relationships, and discover your path
-              forward with compassionate, evidence-based guidance.
-            </p>
             <div className="hero__consultant">
               <h3 className="consultant__name">Armina Kafedzic-Briga</h3>
               <p className="consultant__credentials">
@@ -121,9 +121,8 @@ export default function Home() {
                 beliefs and unconscious dynamics that may be holding you back.
               </p>
               <p className="about__text">
-                This transformative work brings awareness, healing, and
-                resolution—often creating profound shifts in perspective and
-                life direction.
+                Through this work, clients gain awareness, heal old patterns,
+                and experience deep shifts in perspective and direction.
               </p>
               <h3 className="about__subheading">
                 Why Choose Systemic Constellations?
@@ -147,7 +146,7 @@ export default function Home() {
               <h3 className="about__subheading">About Your Guide</h3>
               <p className="about__credential-text">
                 Certified Systemic Constellation Master with
-                <strong> 15+ years of experience</strong> working with
+                <strong> many years of experience</strong> working with
                 individuals and organizations across diverse backgrounds.
               </p>
               <p className="about__credential-text">
@@ -161,7 +160,7 @@ export default function Home() {
         {/* Services Section */}
         <section id="services" className="services">
           <div className="services__container">
-            <h2 className="section-title">Our Services</h2>
+            <h2 className="section-title">Services</h2>
             <p className="services__intro">
               Tailored constellation work designed to meet your unique needs and
               goals.
@@ -287,9 +286,9 @@ export default function Home() {
             <div className="testimonials__grid">
               <blockquote className="testimonial">
                 <p className="testimonial__quote">
-                  "After years of therapy, the constellation work gave me in one
+                  After years of therapy, the constellation work gave me in one
                   session what I couldn't access before. I finally understand my
-                  relationship patterns and feel equipped to move forward."
+                  relationship patterns and feel equipped to move forward.
                 </p>
                 <footer className="testimonial__footer">
                   <strong className="testimonial__name">Sarah M.</strong>
@@ -300,10 +299,10 @@ export default function Home() {
               </blockquote>
               <blockquote className="testimonial">
                 <p className="testimonial__quote">
-                  "Our team brought our organizational challenges to
+                  Our team brought our organizational challenges to
                   constellation work. The shift in communication and
                   collaboration has been remarkable. I'd recommend this for any
-                  leadership team."
+                  leadership team.
                 </p>
                 <footer className="testimonial__footer">
                   <strong className="testimonial__name">James K.</strong>
@@ -314,12 +313,12 @@ export default function Home() {
               </blockquote>
               <blockquote className="testimonial">
                 <p className="testimonial__quote">
-                  "I came uncertain and skeptical. What I experienced was
+                  I came uncertain and skeptical. What I experienced was
                   undeniable. My perspective on my family situation completely
-                  shifted, and I left with clarity and peace."
+                  shifted, and I left with clarity and peace.
                 </p>
                 <footer className="testimonial__footer">
-                  <strong className="testimonial__name">Emma L.</strong>
+                  <strong className="testimonial__name">Marie L.</strong>
                   <span className="testimonial__context">
                     Family Systems Work
                   </span>
@@ -340,7 +339,7 @@ export default function Home() {
               </p>
               <div className="cta__buttons">
                 <a
-                  href="mailto:hello@example.com"
+                  href="mailto:contact@arminna.de"
                   className="button button--primary"
                 >
                   Schedule Your Session
@@ -389,26 +388,41 @@ export default function Home() {
             <div className="footer__section">
               <h4 className="footer__heading">Contact</h4>
               <p className="footer__text">
-                <a href="mailto:hello@example.com">hello@example.com</a>
+                <a href="mailto:contact@arminna.de">contact@arminna.de</a>
                 <br />
-                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                <a href="tel:+4915226788789">+49 1522 6788789</a>
               </p>
             </div>
             <div className="footer__section">
               <h4 className="footer__heading">Follow</h4>
               <ul className="footer__social">
                 <li>
-                  <a href="#" aria-label="LinkedIn">
+                  <a
+                    href="https://linkedin.com/in/armina-kafedzic-579a97b9"
+                    aria-label="LinkedIn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     LinkedIn
                   </a>
                 </li>
                 <li>
-                  <a href="#" aria-label="Instagram">
+                  <a
+                    href="https://instagram.com/armina.arminna"
+                    aria-label="Instagram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="#" aria-label="Facebook">
+                  <a
+                    href="https://facebook.com/arminaa.arminaa"
+                    aria-label="Facebook"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Facebook
                   </a>
                 </li>
@@ -416,17 +430,13 @@ export default function Home() {
             </div>
           </div>
           <div className="footer__bottom">
-            <p className="footer__copyright">
-              &copy; 2025 Systemic Constellations. All rights reserved.
+            <p className="footer__thank-you">
+              Thank you for visiting. I look forward to supporting you on your
+              journey of transformation and growth.
             </p>
-            <ul className="footer__legal">
-              <li>
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#">Terms of Service</a>
-              </li>
-            </ul>
+            <p className="footer__copyright">
+              &copy; 2025 Armina Kafedzic-Briga. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
