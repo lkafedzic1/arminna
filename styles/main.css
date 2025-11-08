@@ -88,6 +88,7 @@
 html {
   scroll-behavior: smooth;
   font-size: var(--font-size-base);
+  scroll-padding-top: 120px; /* Offset for fixed header */
 }
 
 body {
@@ -311,6 +312,10 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.hero__content .button--primary {
+  margin-top: var(--spacing-lg);
 }
 
 .hero__title {
@@ -824,7 +829,26 @@ strong {
    RESPONSIVE DESIGN
    ============================================================================ */
 
+/* Large screens */
+@media (min-width: 1024px) {
+  html {
+    scroll-padding-top: 80px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 769px) and (max-width: 1023px) {
+  html {
+    scroll-padding-top: 100px;
+  }
+}
+
+/* Mobile screens */
 @media (max-width: 768px) {
+  html {
+    scroll-padding-top: 120px;
+  }
+
   :root {
     --font-size-base: 15px;
     --font-size-2xl: 28px;
@@ -849,17 +873,14 @@ strong {
   }
 
   .hero {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
     gap: var(--spacing-2xl);
     padding: var(--spacing-2xl) var(--container-padding);
   }
 
   .hero__consultant {
     padding: var(--spacing-md);
-  }
-
-  .hero__content .button--primary {
-    margin-top: var(--spacing-lg);
   }
 
   .consultant__name {
